@@ -137,7 +137,7 @@ where
                 tmp
             };
             // p_s = alpha * a * x + beta * p_s
-            p_s.sygemv(
+            p_s.gemv(
                 norm_cst,                  //alpha
                 &self.eigen_vectors_ortho, //a
                 &tmp,
